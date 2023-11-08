@@ -1,0 +1,244 @@
+* {
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.container-parallax1,
+.container-parallax2,
+.container-parallax3,
+.container-parallax4,
+.container-parallax5 {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* topo da pagina */
+.topo {
+    min-width: 780px;
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    background-color: #604829;
+    z-index: 1;
+}
+
+.topo div {
+    position: absolute;
+    top: 35%;
+    right: 5%;
+}
+
+.topo div a {
+    font-size: 14px;
+    font-family: "oswald", sans-serif;
+    font-weight: 600;
+    color: #604829;
+    padding: 8px;
+    text-decoration: none;
+    background-color: white;
+    border: white solid 3px;
+    border-radius: 22px 10px;
+    letter-spacing: 1px;
+    margin: 0 3px;
+    display: inline;
+}
+
+.topo div a:hover {
+    background-color: #604829;
+    color: white;
+}
+
+
+.topo img {
+    width: 100px;
+    position: relative;
+    top: -18%;
+    left: 5%;
+}
+
+.container-parallax1 {
+background-image: url("./fotos/parallax-imagem1.png");
+height: 100vh;
+}
+
+.container-parallax1 h1 {
+    font-size: 70px;
+    font-family: "fraunces", serif;
+    color: aliceblue;
+    text-align: center;
+    position: absolute;
+    top: 45%;
+    left: 0;
+    right: 0;
+}
+
+.container-texto h2 {
+    color: #604829;
+    margin-top: 5%;
+    text-align: center;
+    font-family: "fraunces", sans-serif;
+    font-style: italic;
+    padding: 7px;
+}
+
+.container-parallax2 h3, 
+.container-parallax3 h3 {
+    width: 350px;
+    padding: 15px;
+    position: relative;
+    top: 45%;
+    left: 0;
+    right: 0;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    margin: auto;
+    background-color: #604829;
+    color: white;
+}
+
+
+
+.container-texto p {
+    color: #666;
+    padding: 110px;
+    padding: 80px 0px;
+    letter-spacing: 2px;
+    line-height: 30px;
+    margin: 0 10%;
+}
+
+.container-parallax2 {
+    background-image: url("./fotos/parallax-imagem2.jpg");
+    height: 100vh;
+}
+
+.container-parallax3 {
+    background-image: url("./fotos/parallax-imagem3.jpg");
+    height: 100vh;
+}
+
+.container-parallax4 {
+    background-image: url("./fotos/parallax-imagem4.png");
+    height: 100vh;
+}
+
+.container-parallax4
+
+iframe {
+   position: absolute;
+   top: 19%;
+   left: 0%;
+   right: 0;
+}
+
+.container-contatos {
+    width: 300px;
+    border-radius: 20px;
+    background-color: #604829;
+    color: white;
+    text-align: center;
+    position: absolute;
+    bottom: 6%;
+    left: 0;
+    right: 0;
+}
+
+.container-parallax5 {
+    background-image: url("./fotos/cafeteria.jpg");
+    height: 100vh;
+}
+
+.container-horarios {
+    padding: 100px 20px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    right: 20%;
+    top: 10%;
+    width: 100%;
+}
+
+.lista-horarios li {
+  margin-bottom: 15px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  
+}
+
+.lista-horarios li div {
+    background-color: gray;
+    height: 1px;
+    flex: 1 1 auto;
+}
+
+ .lista-horarios {
+    font-size: 20px;
+    position: absolute;
+    top: 23%;
+    left: 45%;
+    right: 0;
+    color: aliceblue;
+    line-height: 35px;
+    max-width: 768px;
+}
+
+.lista-horarios p:nth-child(3) {
+    color: rgb(170, 150, 95);
+}
+
+
+
+.container-parallax5 h2 {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 70px;
+    position: relative;
+    right: 0;
+    left: 5;
+} 
+
+.container-rodape a:visited,.container-rodape a {
+    color: red;
+    border: solid 4px white;
+    background-color: white;
+    margin-top: 40px;
+
+}
+
+.container-rodape {
+    background-color: #7c6344;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.texto-marrom {
+     color: antiquewhite;
+    font-weight: bold;
+}
+
+.container-rodape span {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.container-parallax5 a {
+    position: relative;
+    left: 95%;
+    top: 73%;
+}
