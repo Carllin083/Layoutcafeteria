@@ -1,284 +1,380 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow-x: none;
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow-x: none;
 
-}
+    }
 
-
-
-
-.container-parallax1,
-.container-parallax2,
-.container-parallax3,
-.container-parallax4,
-.container-parallax5 {
-  position: relative;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-/* topo da pagina */
-.topo {
-    width: 100%;
-    height: 75px;
-    position: fixed;
-    background-color: #604829;
-    z-index: 1;
-
-}
-
-.topo div {
-    position: absolute;
-    top: 35%;
-    right: 5%;
-}
-
-.topo div a {
-    font-size: 14px;
-    font-family: "oswald", sans-serif;
-    font-weight: 600;
-    color: #604829;
-    padding: 8px;
-    text-decoration: none;
-    background-color: white;
-    border-radius: 22px 10px;
-    letter-spacing: 1px;
-    margin: 0 3px;
-    display:inline;
-
-}
-
-.topo div a:hover {
-    background-color: #604829;
-    color: white;
-    transform: scale(1.2);
-    transition: .2s ease-in-out;
-    border: white solid 3px;
-}
-
-
-.topo img {
-    width: 100px;
+    .container-parallax1,
+    .container-parallax2,
+    .container-parallax3,
+    .container-parallax4,
+    .container-parallax5 {
     position: relative;
-    top: -18%;
-    left: 5%;
-}
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    }
 
-.container-parallax1 {
-background-image: url("./fotos/parallax-imagem1.png");
-height: 100vh;
-}
+    /* topo da pagina */
+    .topo {
+        width: 100%;
+        height: 75px;
+        position: fixed;
+        background-color: #604829;
+        z-index: 1;
 
-.container-parallax1::before {
-    content: '';
+    }
+
+    .topo div {
+        position: absolute;
+        top: 35%;
+        right: 5%;
+    }
+
+    .topo div a {
+        font-size: 14px;
+        font-family: "oswald", sans-serif;
+        font-weight: 600;
+        color: #604829;
+        padding: 8px;
+        text-decoration: none;
+        background-color: white;
+        border-radius: 22px 10px;
+        letter-spacing: 1px;
+        margin: 0 3px;
+        display:inline;
+        transition: .5s ease-in-out;
+        transform: scale(1);
+
+    }
+
+    .topo div a:hover {
+        background: linear-gradient(to right, #7c6344, #e3bb8a );
+        color: white;
+        transform: scale(1.6);
+        transition: .2s ease-in-out;
+        border: white solid 3px;
+    }
+
+
+    .topo img {
+        width: 100px;
+        position: relative;
+        top: -18%;
+        left: 5%;
+    }
+
+    .container-parallax1 {
+    background-image: url("./fotos/parallax-imagem1.png");
+    height: 100vh;
+    }
+
+    .container-parallax1::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: .6;
+        background-color: black;
+    }
+
+    .container-parallax1 h1 {
+        font-size: 70px;
+        font-family: "fraunces", serif;
+        color: aliceblue;
+        text-align: center;
+        position: absolute;
+        top: 45%;
+        left: 0;
+        right: 0;
+        font-weight: bold;
+    }  
+
+    .container-texto h2 {
+        color: #604829;
+        margin-top: 5%;
+        text-align: center;
+        font-family: "fraunces", sans-serif;
+        font-style: italic;
+        padding: 7px;
+    }
+
+    .container-parallax2 h3, 
+    .container-parallax3 h3 {
+        width: 350px;
+        padding: 15px;
+        position: relative;
+        top: 45%;
+        left: 0;
+        right: 0;
+        font-size: 20px;
+        font-weight: 400;
+        text-align: center;
+        margin: auto;
+        background-color: #604829;
+        color: white;
+    }
+
+    .container-texto p {
+        color: #666;
+        padding: 110px;
+        padding: 80px 0px;
+        letter-spacing: 2px;
+        line-height: 30px;
+        margin: 0 10%;
+    }
+
+    .container-parallax2 {
+        background-image: url("./fotos/parallax-imagem2.jpg");
+        height: 100vh;
+    }
+
+    .container-parallax3 {
+        background-image: url("./fotos/parallax-imagem3.jpg");
+        height: 100vh;
+    }
+
+    .container-parallax4{
+        background: url('/fotos/parallax-imagem4.png');
+        text-align: center;
+        height: 100vh;
+    }
+
+    .container-parallax4 iframe {
+        text-align: center;
+        width: 100%;
+        max-width: 550px;
+        margin-top: 2% ;
+
+    }
+
+    .container-parallax4 h2 {
+        position: relative;
+         margin: auto;
+         background-color: #7c6344;
+         border: white solid 3px;
+         border-radius: 25px;
+         color: white;
+         padding: 10px;
+         width: 250px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+    }
+
+    .container-contatos {
+        width: 350px;
+        border-radius: 20px;
+        background-color: #604829;
+        color: white;
+        margin: 25px  auto;
+
+        
+    }
+
+    .container-parallax5 {
+        background-image: url("./fotos/cafeteria.jpg");
+        height: 100vh;
+    }
+
+    .container-parallax5 h2 {
+        text-align: center;
+        background-color: #7c6344;
+        color: white;
+        border: solid 3px white;
+        width: 450px;
+        padding: 20px;
+        border-radius: 20px;
+        margin: auto;
+        position: relative;
+        top: 8%;
+    }
+
+    .container-contatos {
+        margin-top: 20px;
+
+    }
+
+    .lista-horarios li {
+    margin-bottom: 15px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
     width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    opacity: .6;
-    background-color: black;
-}
-
-.container-parallax1 h1 {
-    font-size: 70px;
-    font-family: "fraunces", serif;
-    color: aliceblue;
-    text-align: center;
-    position: absolute;
-    top: 45%;
-    left: 0;
-    right: 0;
-    font-weight: bold;
-}  
-
-.container-texto h2 {
-    color: #604829;
-    margin-top: 5%;
-    text-align: center;
-    font-family: "fraunces", sans-serif;
-    font-style: italic;
-    padding: 7px;
-}
-
-.container-parallax2 h3, 
-.container-parallax3 h3 {
-    width: 350px;
-    padding: 15px;
-    position: relative;
-    top: 45%;
-    left: 0;
-    right: 0;
-    font-size: 20px;
-    font-weight: 400;
-    text-align: center;
-    margin: auto;
-    background-color: #604829;
-    color: white;
-}
-
-
-
-.container-texto p {
-    color: #666;
-    padding: 110px;
-    padding: 80px 0px;
-    letter-spacing: 2px;
-    line-height: 30px;
-    margin: 0 10%;
-}
-
-.container-parallax2 {
-    background-image: url("./fotos/parallax-imagem2.jpg");
-    height: 100vh;
-}
-
-.container-parallax3 {
-    background-image: url("./fotos/parallax-imagem3.jpg");
-    height: 100vh;
-}
-
-.container-parallax4 {
-    background-image: url("./fotos/parallax-imagem4.png");
-    height: 100vh;
-}
-
-.container-parallax4{
-    text-align: center;
-}
-
-.container-parallax4 iframe {
-    text-align: center;
-    width: 100%;
-    max-width: 550px;
-    margin-top: 2% ;
-
-}
-
-.container-parallax4 h2  {
-    background-color: #7c6344;
-    border: solid 3px white;
-    margin: auto;
-    width: 250px;
-    padding: 12px;
-    border-radius: 25px;
-    color: white;
-}
-
-
-.container-contatos {
-    width: 350px;
-    border-radius: 20px;
-    background-color: #604829;
-    color: white;
-    margin: 25px  auto;
-
     
 }
+    /*estilizar scrool*/
+    ::-webkit-scrollbar {
+        width: 15px;
+    }
 
-.container-parallax5 {
-    background-image: url("./fotos/cafeteria.jpg");
-    height: 100vh;
-}
+    ::-webkit-scrollbar-thumb {
+       background-color: #604829;
+       margin-left: 15px;
+       position: absolute;
+       border-radius: 10px;
+    }
 
-.container-parallax5 h2 {
-    text-align: center;
+    .lista-horarios {
+        overflow: auto;
+    }
+
+    .lista-horarios li div {
+        background-color: gray;
+        height: 1px;
+        flex:1 1 auto;
+    }
+
+    .lista-horarios {
+        position: relative;
+        top: 35px;
+        max-width: 780px;
+        max-height: 350px;
+        font-size: 20px;
+        margin: 0;
+        padding-left: 20px;
+        color: aliceblue;
+        line-height: 35px;
+    }
+
+    .lista-horarios p:nth-child(3) {
+        color: rgb(170, 150, 95);
+    }
+
+    .container-rodape {
+        margin: 0;
+        padding: 0;
+        background-color: #7c6344;
+        color: white;
+        text-align: center;
+        width: 100%;
+    }
+
+    .texto-marrom {
+        color: antiquewhite;
+        font-weight: bold;
+    }
+
+    .container-rodape span {
+        color: #ffffff;
+        font-weight: bold;
+    }
+
+    /* animation: animação parar flutuar*/
+    .seta {
+        position: absolute;
+        right: 5%;
+        bottom: 0%;
+        animation:flutuar 3s ease-in-out infinite alternate;
+    }
+
+   
+
+    @keyframes flutuar {
+        0% {
+            bottom: -2px;
+        }
+
+        100% {
+            bottom:40px
+
+        }
+    }
+
+    .container-parallax5 nav {
+        text-align: center;
+        margin:15px auto;
+    }
+
+    .container-parallax5 nav a {
+    text-decoration: none;
     background-color: #7c6344;
-    color: white;
-    border: solid 3px white;
-    width: 450px;
-    padding: 20px;
-    border-radius: 20px;
-    margin: auto;
-    position: relative;
-    top: 8%;
-}
-
-
-.lista-horarios li {
-  margin-bottom: 15px;
-  list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  
-}
-
-.lista-horarios li div {
-    background-color: gray;
-    height: 1px;
-    flex: 1 1 auto;
-}
-
-.container-horarios {
-    position: relative;
-    top: 16%;
-}
-
- .lista-horarios {
-    position: relative;
-    max-width: 780px;
-    font-size: 20px;
-    margin: auto;
-    padding: 0;
-    color: aliceblue;
-    line-height: 35px;
-}
-
-.lista-horarios p:nth-child(3) {
-    color: rgb(170, 150, 95);
-}
-
-
-
-.container-rodape {
-    margin: 0;
-    padding: 0;
-    background-color: #7c6344;
-    color: white;
-    text-align: center;
-    width: 100%;
-}
-
-.texto-marrom {
-     color: antiquewhite;
-    font-weight: bold;
-}
-
-.container-rodape span {
     color: #ffffff;
-    font-weight: bold;
-}
+    padding: 12px;
+    border-radius: 25px;
+    transition: 1s ease-in-out;
+    }
 
- .seta {
-    position: absolute;
-    bottom: 5%;
-    right: 5%;
+    .container-parallax5 nav a:hover {
+        padding:18px ;
+        transition: 0.5s;
+        background: linear-gradient(to right, #604829,#e3bb8a);
+    }
 
-}
+    .container-parallax5 nav a:hover {
+        border: solid 3px white;
+        animation: seta 2s ease-in-out alternate infinite;
+    }
+     
+    @keyframes seta {
+        0% {
+            border: 0%;
+        }
 
-.container-parallax5 nav {
-    text-align: center;
-    margin: 15px auto;
-}
-
- .container-parallax5 nav a {
-   text-decoration: none;
-   background-color: #7c6344;
-   color: #ffffff;
-   padding: 12px;
-   border: solid 3px white;
-   border-radius: 25px;
-   transition: 0.5s;
-}
-
+        100% {
+            border: 100%;
+        }
+    }
 
 
- .container-parallax5 nav a:hover {
-    padding:18px ;
-    transition: 0.5s;
-}
+    @media screen and (max-width:1024px) {
+        .seta{
+            display: none;
+        }
 
+        .topo div a {
+            font-size: 10px;
+            font-weight: 900;
+        }
+
+        .container-horarios {
+            margin: auto 25px;
+            font-size: 9px;
+        }
+
+        .lista-horarios {
+            font-size: 15px;
+            line-height: 15px;
+        }
+    }
+
+
+
+    @media screen and (max-width:475px) {
+        .container-parallax5 h2{
+            display: flex;
+            font-size: 15px;
+            width: 180px;
+        }
+
+        iframe {
+        display: none;
+        }
+
+    .container-parallax1,
+    .container-parallax2,
+    .container-parallax3,
+    .container-parallax4,
+    .container-parallax5 {
+        width: 100%;
+    }
+
+    .lista-horarios {
+        line-height: 12px;
+        font-size: 15px;
+    }
+
+    .container-parallax1 h1 {
+        font-size: 50px;
+    }
+
+    .topo div a {
+        font-size: 8px;
+    }
+
+    }
