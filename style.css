@@ -142,14 +142,14 @@
         background: url('/fotos/parallax-imagem4.png');
         text-align: center;
         height: 100vh;
+        background-attachment: fixed;
     }
 
     .container-parallax4 iframe {
         text-align: center;
         width: 100%;
         max-width: 550px;
-        margin-top: 2% ;
-
+        margin-top: 2%;
     }
 
     .container-parallax4 h2 {
@@ -210,18 +210,18 @@
 }
     /*estilizar scrool*/
     ::-webkit-scrollbar {
-        width: 15px;
+        width: 12px;
     }
 
     ::-webkit-scrollbar-thumb {
        background-color: #604829;
-       margin-left: 15px;
        position: absolute;
        border-radius: 10px;
     }
 
     .lista-horarios {
         overflow: auto;
+        padding: 0 50px 50px 0;
     }
 
     .lista-horarios li div {
@@ -321,6 +321,7 @@
         }
     }
 
+    /* redenrizando a pagina ao diminuir a tela*/
 
     @media screen and (max-width:1024px) {
         .seta{
@@ -341,9 +342,10 @@
             font-size: 15px;
             line-height: 15px;
         }
-    }
+}
 
 
+/* redenrizando a pagina ao diminuir a tela*/
 
     @media screen and (max-width:475px) {
         .container-parallax5 h2{
@@ -377,4 +379,5 @@
         font-size: 8px;
     }
 
-    }
+
+}
